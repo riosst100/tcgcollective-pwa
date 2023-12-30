@@ -2252,11 +2252,6 @@
     redux-thunk "~2.3.0"
     uuid "~8.3.2"
 
-"@mayankzalavadia/magento-2-pwa-studio-override-mapping-webpack-plugin@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@mayankzalavadia/magento-2-pwa-studio-override-mapping-webpack-plugin/-/magento-2-pwa-studio-override-mapping-webpack-plugin-1.0.0.tgz#d9127e7d0ba04c5e706d7e503686dc6aad5196f9"
-  integrity sha512-vNiHATFu4j1xxov83KnvEOVJNxvwYnZMPGhuB5/yvfRv48tdrLOUILpiCRGbNop3zrPWebyR/Dj7RiA9++r2pA==
-
 "@mdx-js/mdx@^1.6.22":
   version "1.6.22"
   resolved "https://registry.yarnpkg.com/@mdx-js/mdx/-/mdx-1.6.22.tgz#8a723157bf90e78f17dc0f27995398e6c731f1ba"
