@@ -28,7 +28,8 @@
     "@magento/venia-drivers": "src/drivers"
   },
   "dependencies": {
-    "@magento/pwa-buildpack": "~11.4.3"
+    "@magento/pwa-buildpack": "~11.4.3",
+    "@riosst100/pwa-multi-website": "^1.0.0"
   },
   "devDependencies": {
     "@adobe/apollo-link-mutation-queue": "~1.0.2",
