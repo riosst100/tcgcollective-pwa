@@ -1,12 +1,16 @@
-# IDE Files
-#-------------------------
-/nbproject/
-.idea/*
-
-## Sublime Text cache files
-*.tmlanguage.cache
-*.tmPreferences.cache
-*.stTheme.cache
-*.sublime-workspace
-*.sublime-project
-
+.idea
+.vscode
+coverage
+node_modules
+storybook-dist
+test-results
+dist
+.DS_Store
+.env
+build-stats.json
+npm-debug.log
+merged-schema*.json
+test-report.xml
+test-results.json
+yarn-error.log
+template.generated.html
