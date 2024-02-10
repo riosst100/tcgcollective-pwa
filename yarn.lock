@@ -3008,10 +3008,10 @@
     "@react-types/overlays" "^3.8.4"
     "@react-types/shared" "^3.22.0"
 
-"@riosst100/pwa-marketplace@^1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@riosst100/pwa-marketplace/-/pwa-marketplace-1.1.4.tgz#bb26f5bc3ff9d15b781194bc3e8da6119dd36d70"
-  integrity sha512-AfdvbSM4kSi0IR+KN+IhU7u3Ybd7eqo/igj9VEjJ1fRKslJpvne8px6iMnzAG/6ySqsG/Rd2tYFJgjjvJk3OAA==
+"@riosst100/pwa-marketplace@^1.1.7":
+  version "1.1.7"
+  resolved "https://registry.yarnpkg.com/@riosst100/pwa-marketplace/-/pwa-marketplace-1.1.7.tgz#cdfd7f6dae2be67d0e3b6da7d97585a2202c18df"
+  integrity sha512-TeDkRg8mO92ZfUjSQD8XmaEZrLUhGVQfmKdMT9GYKZRnJE4c6zC/ScKys4ffPA7MYCNPXwSXTuwc6FqkugI50w==
   dependencies:
     axios "^1.6.5"
 
