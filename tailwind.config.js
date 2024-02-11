@@ -3,11 +3,12 @@
 // Local path is the only way to develop "tailwind.preset.js".
 const venia = require('@magento/pwa-theme-venia');
 // const venia = require('../pwa-theme-venia');
+const tcgTheme = require('./tcg-theme-preset')
 
 const config = {
     mode: 'jit',
     // Include your custom theme here.
-    presets: [venia],
+    presets: [venia, tcgTheme],
     // Configure how Tailwind statically analyzes your code here.
     // Note that the Tailwind's `jit` mode doesn't actually use PurgeCSS.
     purge: {
@@ -17,7 +18,8 @@ const config = {
             './node_modules/@magento/venia-ui/lib/**/*.module.css',
             '../venia-ui/lib/**/*.module.css',
             './src/**/*.module.css',
-            './template.html'
+            './template.html',
+            './src/**/*.{html,js}',
         ],
         // Extract Tailwind classnames from source files.
         // Our default matcher only matches targets of CSS Modules' `composes`,
