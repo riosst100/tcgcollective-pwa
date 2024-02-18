@@ -20,6 +20,7 @@ const config = {
             './src/**/*.module.css',
             './template.html',
             './src/**/*.{html,js}',
+            './pwa-marketplace/**/*.{html,js,jsx}',
         ],
         // Extract Tailwind classnames from source files.
         // Our default matcher only matches targets of CSS Modules' `composes`,
