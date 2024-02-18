@@ -2,8 +2,8 @@
 // Node path should be committed, but it makes preset dev impossible.
 // Local path is the only way to develop "tailwind.preset.js".
 const venia = require('@magento/pwa-theme-venia');
-// const venia = require('../pwa-theme-venia');
 const tcgTheme = require('./tcg-theme-preset')
+// const venia = require('../pwa-theme-venia');
 
 const config = {
     mode: 'jit',
@@ -20,8 +20,7 @@ const config = {
             './src/**/*.module.css',
             './template.html',
             './src/**/*.{html,js}',
-            './node_modules/@riosst100/pwa-marketplace/src/**/*.{html,js,jsx}'
-            './pwa-marketplace/**/*.{html,js,jsx}',
+            './node_modules/@riosst100/pwa-marketplace/**/*.{html,js,jsx}'
         ],
         // Extract Tailwind classnames from source files.
         // Our default matcher only matches targets of CSS Modules' `composes`,

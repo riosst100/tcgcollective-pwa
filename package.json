@@ -30,7 +30,7 @@
   "dependencies": {
     "@magento/pwa-buildpack": "~11.4.3",
     "@magento/venia-ui": "~10.3.0",
-    "@riosst100/pwa-marketplace": "^1.2.4"
+    "@riosst100/pwa-marketplace": "^1.2.8"
   },
   "devDependencies": {
     "@adobe/apollo-link-mutation-queue": "~1.0.2",
