@@ -39,6 +39,9 @@ const extend = {
     fontFamily: {
         sans: ["Noto Sans", 'sans-serif']
     },
+    fontSize: {
+        base: ['12px']
+    },
     colors,
     boxShadow: {
         "type-1": "0px 0px 7px 2px rgba(205,205,205,0.25)",
