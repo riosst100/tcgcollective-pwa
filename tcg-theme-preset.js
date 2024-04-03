@@ -3,6 +3,9 @@ const colors = {
         100: '#E6E9EA',
         200: '#999999',
         300: '#19222A',
+        400: '#B9AEC5',
+        500: '#B2B2B2',
+        800: '#005947',
         900: '#292D32',
     },
     blue: {
@@ -23,8 +26,8 @@ const colors = {
         700: '#1f39ff',
         800: '#172bc4',
         'base': '#3d84ff',
-        'dark': '#2954ff',
-        'darkest': '#172bc4',
+        'dark': '#6243FA',
+        'darkest': '#4E31DB',
         'light': '#c2c8ff',
     }
 };
@@ -40,7 +43,7 @@ const extend = {
         sans: ["Noto Sans", 'sans-serif']
     },
     fontSize: {
-        base: ['12px']
+        base: ['13px']
     },
     colors,
     boxShadow: {
