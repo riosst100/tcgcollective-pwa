@@ -20,6 +20,7 @@ const colors = {
     yellow: {
         200: '#F7C317',
         300: '#FFC501',
+        400: '#FF6E26'
     },
     brand: {
         100: '#c2c8ff',
