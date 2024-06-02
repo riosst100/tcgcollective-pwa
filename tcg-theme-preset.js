@@ -2,6 +2,7 @@ const colors = {
     gray: {
         50: '#F8F8F8',
         100: '#E6E9EA',
+        150: '#F2F2F2',
         200: '#999999',
         300: '#19222A',
         400: '#B9AEC5',
@@ -43,7 +44,7 @@ const extend = {
         DEFAULT: theme('colors.gray.900')
     }),
     fontFamily: {
-        sans: ["Noto Sans", 'sans-serif']
+        sans: ["Poppins", "sans-serif"]
     },
     fontSize: {
         base: ['13px']
