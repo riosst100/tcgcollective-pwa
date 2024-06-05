@@ -52,7 +52,21 @@ const extend = {
     colors,
     boxShadow: {
         "type-1": "0px 0px 7px 2px rgba(205,205,205,0.25)",
-    }
+    },
+    keyframes: {
+        'slide-up-frame': {
+            '0%': { bottom: '-468px' },
+            '100%': { bottom: '0' },
+        },
+        'slide-down-frame': {
+            '0%': { bottom: '0px' },
+            '100%': { bottom: '-468px' },
+        },
+    },
+    animation: {
+        'anima-slide-up': 'slide-up-frame .5s cubic-bezier(0.4, 0, 0.2, 1);',
+        'anima-slide-down': 'slide-down-frame .5s cubic-bezier(0.4, 0, 0.2, 1);',
+    },
 };
 
 const theme = {
