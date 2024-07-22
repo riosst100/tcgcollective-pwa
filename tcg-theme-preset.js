@@ -2,6 +2,7 @@ const colors = {
     gray: {
         50: '#F8F8F8',
         100: '#E6E9EA',
+        150: '#F2F2F2',
         200: '#999999',
         300: '#19222A',
         400: '#B9AEC5',
@@ -43,7 +44,7 @@ const extend = {
         DEFAULT: theme('colors.gray.900')
     }),
     fontFamily: {
-        sans: ["Noto Sans", 'sans-serif']
+        sans: ["Poppins", "sans-serif"]
     },
     fontSize: {
         base: ['13px']
@@ -51,7 +52,21 @@ const extend = {
     colors,
     boxShadow: {
         "type-1": "0px 0px 7px 2px rgba(205,205,205,0.25)",
-    }
+    },
+    keyframes: {
+        'slide-up-frame': {
+            '0%': { bottom: '-468px' },
+            '100%': { bottom: '0' },
+        },
+        'slide-down-frame': {
+            '0%': { bottom: '0px' },
+            '100%': { bottom: '-468px' },
+        },
+    },
+    animation: {
+        'anima-slide-up': 'slide-up-frame .5s cubic-bezier(0.4, 0, 0.2, 1);',
+        'anima-slide-down': 'slide-down-frame .5s cubic-bezier(0.4, 0, 0.2, 1);',
+    },
 };
 
 const theme = {
