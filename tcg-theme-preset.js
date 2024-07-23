@@ -12,7 +12,7 @@ const colors = {
         '600-transparent': '#192221b3',
     },
     blue: {
-        600: '#6243FA',
+        600: '#ff3b98',
         700: '#4E31DB',
     },
     'darkblue': {
@@ -26,11 +26,11 @@ const colors = {
     brand: {
         100: '#c2c8ff',
         400: '#3d84ff',
-        600: '#6243FA',
+        600: '#ff3b98',
         700: '#1f39ff',
         800: '#172bc4',
         'base': '#3d84ff',
-        'dark': '#6243FA',
+        'dark': '#ff3b98',
         'darkest': '#4E31DB',
         'light': '#c2c8ff',
     }
@@ -44,10 +44,11 @@ const extend = {
         DEFAULT: theme('colors.gray.900')
     }),
     fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
         sans: ["Poppins", "sans-serif"]
     },
     fontSize: {
-        base: ['13px']
+        base: ['12px']
     },
     colors,
     boxShadow: {
