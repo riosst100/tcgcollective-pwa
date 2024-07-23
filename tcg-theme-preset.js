@@ -1,0 +1,115 @@
+const colors = {
+    gray: {
+        50: '#F8F8F8',
+        100: '#E6E9EA',
+        150: '#F2F2F2',
+        200: '#999999',
+        300: '#19222A',
+        400: '#B9AEC5',
+        500: '#B2B2B2',
+        800: '#005947',
+        900: '#292D32',
+        '600-transparent': '#192221b3',
+    },
+    blue: {
+        600: '#6243FA',
+        700: '#4E31DB',
+    },
+    'darkblue': {
+        900: '#280135',
+    },
+    yellow: {
+        200: '#F7C317',
+        300: '#FFC501',
+        400: '#FF6E26'
+    },
+    brand: {
+        100: '#c2c8ff',
+        400: '#3d84ff',
+        600: '#6243FA',
+        700: '#1f39ff',
+        800: '#172bc4',
+        'base': '#3d84ff',
+        'dark': '#6243FA',
+        'darkest': '#4E31DB',
+        'light': '#c2c8ff',
+    }
+};
+
+const extend = {
+    textColor: theme => ({
+        colorDefault: "#1B1B1B", // TODO @TW naming collision: TW puts "fontSize" + "color" under "text-" prefix
+        error: theme('colors.red.700'),
+        subtle: theme('colors.gray.600'),
+        DEFAULT: theme('colors.gray.900')
+    }),
+    fontFamily: {
+        sans: ["Poppins", "sans-serif"]
+    },
+    fontSize: {
+        base: ['13px']
+    },
+    colors,
+    boxShadow: {
+        "type-1": "0px 0px 7px 2px rgba(205,205,205,0.25)",
+    },
+    keyframes: {
+        'slide-up-frame': {
+            '0%': { bottom: '-468px' },
+            '100%': { bottom: '0' },
+        },
+        'slide-down-frame': {
+            '0%': { bottom: '0px' },
+            '100%': { bottom: '-468px' },
+        },
+    },
+    animation: {
+        'anima-slide-up': 'slide-up-frame .5s cubic-bezier(0.4, 0, 0.2, 1);',
+        'anima-slide-down': 'slide-down-frame .5s cubic-bezier(0.4, 0, 0.2, 1);',
+    },
+};
+
+const theme = {
+    // Preserve Tailwind defaults + extend from this preset.
+    extend,
+    // Override Tailwind defaults and preset config.
+    screens: {
+        xs: '1px',
+        sm: '576px',
+        md: '768px',
+        lg: '1024px',
+        xl: '1280px',
+        max: '1440px',
+    },
+
+    venia: theme => ({
+        plugins: {
+            body: {
+                color: theme('colors.neutral.900')
+            },
+            root: {
+                colors
+            }
+        }
+    })
+};
+
+const config = {
+    theme,
+    variants: {
+        extend: {
+            backgroundColor: ['checked'],
+            backgroundImage: ['focus'],
+            borderColor: ['even'],
+            borderStyle: ['even'],
+            borderWidth: ['even', 'last'],
+            boxShadow: ['active'],
+            fontWeight: ['first'],
+            outline: ['active', 'focus'],
+            pointerEvents: ['disabled'],
+            textColor: ['disabled', 'first']
+        }
+    }
+};
+
+module.exports = config;
