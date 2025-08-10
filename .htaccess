@@ -1,0 +1,12 @@
+# Redirect traffic to your port 3000
+RewriteEngine On
+RewriteBase /
+RewriteRule ^(.*)?$ http://127.0.0.1:15063/$1 [P,L]
+
+RewriteCond %{REQUEST_URI} ^/graphql$
+RewriteRule ^graphql$ https://seller-preprod.tcgcollective.co/graphql [P,L]
+
+# Optional: setting header
+RequestHeader set Host "seller-preprod.tcgcollective.co"
+RequestHeader set X-Real-IP %{REMOTE_ADDR}s
+RequestHeader set X-Forwarded-For %{REMOTE_ADDR}s
