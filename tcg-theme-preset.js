@@ -12,8 +12,8 @@ const colors = {
         '600-transparent': '#192221b3',
     },
     blue: {
-        600: '#ff3b98',
-        700: '#4E31DB',
+        600: '#f76b1c',
+        700: '#f26313',
     },
     'darkblue': {
         900: '#280135',
@@ -26,12 +26,12 @@ const colors = {
     brand: {
         100: '#c2c8ff',
         400: '#3d84ff',
-        600: '#ff3b98',
+        600: '#f76b1c',
         700: '#1f39ff',
         800: '#172bc4',
         'base': '#3d84ff',
-        'dark': '#ff3b98',
-        'darkest': '#4E31DB',
+        'dark': '#f76b1c',
+        'darkest': '#f26313',
         'light': '#c2c8ff',
     }
 };
