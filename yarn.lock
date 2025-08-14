@@ -3013,10 +3013,10 @@
     "@react-types/overlays" "^3.8.4"
     "@react-types/shared" "^3.22.0"
 
-"@riosst100/pwa-marketplace@^2.6.9":
-  version "2.6.9"
-  resolved "https://registry.yarnpkg.com/@riosst100/pwa-marketplace/-/pwa-marketplace-2.6.9.tgz#edcdfe8320d933ed5c70587092930a63a017cb86"
-  integrity sha512-SZgMKBneOHSGue7kkaIndo4+GwuJLYuqweqbA6oMMCDgH5+0dwjW6E+9aO1YdV3ppq6JgFJ+VkTqxMRGWYMClQ==
+"@riosst100/pwa-marketplace@^2.7.1":
+  version "2.7.1"
+  resolved "https://registry.yarnpkg.com/@riosst100/pwa-marketplace/-/pwa-marketplace-2.7.1.tgz#6e6703840979d63482148c055cff3c140d0d70cc"
+  integrity sha512-za09YfZavcbbL6fyK07qCu2SsodXGu/x7XxfIVP9224+xNDf9VuOk60vzu0RkjgAJVOfv0NK0Ndw0LisC5vAEw==
   dependencies:
     axios "^1.6.5"
     formik "^2.4.6"

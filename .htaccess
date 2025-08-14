@@ -1,7 +1,7 @@
 # Redirect traffic to your port 3000
 RewriteEngine On
 RewriteBase /
-RewriteRule ^(.*)?$ http://127.0.0.1:15063/$1 [P,L]
+RewriteRule ^(.*)?$ http://127.0.0.1:21611/$1 [P,L]
 
 RewriteCond %{REQUEST_URI} ^/graphql$
 RewriteRule ^graphql$ https://seller-preprod.tcgcollective.co/graphql [P,L]
