@@ -17,6 +17,17 @@
  * or modify functionality from its dependencies.
  */
 
-function localIntercept() {}
+function localIntercept(targets) {
+	// Register Xendit payment UI component with Venia build target
+	// Place component alongside other payments in the marketplace package for consistency
+	const veniaUi = targets.of('@magento/venia-ui');
+	veniaUi.checkoutPagePaymentTypes.tap(payments => {
+		payments.add({
+			paymentCode: 'xendit',
+			importPath:
+				'@riosst100/pwa-marketplace/src/components/PaymentMethod/Xendit/xendit'
+		});
+	});
+}
 
 module.exports = localIntercept;
