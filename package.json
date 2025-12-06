@@ -10,7 +10,7 @@
     "build": "export NODE_OPTIONS=--openssl-legacy-provider && yarn run build:prod",
     "build:analyze": "export NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && mkdir dist && webpack -p --profile --no-progress --env.mode production --json > dist/build-stats.json && webpack-bundle-analyzer dist/build-stats.json",
     "build:dev": "export NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && webpack --no-progress --env.mode development",
-    "build:prod": "export NODE_OPTIONS=--openssl-legacy-provider && yarn run clean && webpack --no-progress --env.mode production",
+    "build:prod": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --no-progress --env.mode production",
     "build:report": "export NODE_OPTIONS=--openssl-legacy-provider && buildpack generate-build-report",
     "clean": "export NODE_OPTIONS=--openssl-legacy-provider && rimraf dist",
     "lint": "export NODE_OPTIONS=--openssl-legacy-provider && eslint --ignore-path .gitignore 'src/**/{*.js,package.json}'",
@@ -30,7 +30,7 @@
   "dependencies": {
     "@magento/pwa-buildpack": "~11.4.3",
     "@magento/venia-ui": "~10.3.0",
-    "@riosst100/pwa-marketplace": "^2.7.5"
+    "@riosst100/pwa-marketplace": "^3.1.3"
   },
   "devDependencies": {
     "@adobe/apollo-link-mutation-queue": "~1.0.2",
